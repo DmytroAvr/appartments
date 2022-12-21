@@ -1,0 +1,107 @@
+Макет:
+https://www.figma.com/proto/N4WUVZnQYh1hW8UYpIIY13/Estate-Copy?node-id=4%3A2&scaling=min-zoom&page-id=0%3A1
+
+ Домен буде: www.pelekhestate.sk
+Архів з зображеннями: https://www.dropbox.com/sh/8q6ra0usp05taoe/AADyW_bfQup1rFB09qWjZuZZa?dl=0
+
+------------------------------------------------------------------------------------
+Меню:
+O nás
+Príležitosti investovania
+Výhody investovania
+Referencie
+Kontakt
+------------------------------------------------------------------------------------
+HERO секція
+картинка на фоні: backgroundFIRST.jpg
+
+логотип pelekh.estate Logo2.png (тимчасово)
+під логотипом:
+Investičné apartmány v Ukrajine
+
+------------------------------------------------------------------------------------
+зліва
+Our goal змінюємо на: Náš cieľ
+і під цим цитату змінюємо на:
+Nájdeme pre Vás investičný byt, apartmán s atraktívnym výnosom na Ukrajine.
+
+Зправа:
+Pelekh Agency pôsobí v investičnom a realitnom sektore na Ukrajine a pre zákazníkov z EU je na trhu od roku 2018. Začiatkom našej činnosti v EU bolo personálne poradenstvo a nábor zamestnancov, pri čom táto aktivita bola na UA vyvíjaná od roku 2002 cez 15 pobočiek po celej Ukrajine.
+Ukrajina sa stáva čoraz atraktívnejšou pre investície do realitných projektov vďaka integrácii s EÚ, posilňovaniu národnej meny po kríze a takmer nepretržite rastúcim cenám realít, najmä vo veľkých mestách ako sú napríklad Kyjev, Lvov a ďalsie maestá.
+фото: An.jpg
+Ім’я Ava Orn змінюємо на Andriy Pelekh
+Під ім’ям посада: KONATEL’
+------------------------------------------------------------------------------------------
+Our requirements змінюємо на: Naše požiadavky
+Під ним: 
+Ako vyberáme naše ponuku pre Vás. 
+під ним:
+Ponúkame Vám iba najlepšie, bezpečné a preverené nehnuteľnosti od stabilných  a spoľahlivých developerov. 
+
+картинка зліва: advantagesSECOND
+зправа три пункти з тими ж іконками:
+ATRAKTÍVNE REGIÓNY
+Lokalita je dôležita pri budúcom predaji alebo prenajme nehnutelnosti.
+
+KVALITA A CENA
+Vyberáme developerov ktorých kavlita výstavby je v triede  “Comfort” a “Comfort+” čo ponúka najlepší pomer kvality a ceny.
+
+VÝNOSNOSŤ A RIZIKO
+Našou prioritou je bezpečnosť Vašich peňazí a investujeme len do projektov o ktorých máme 101% istotu.
+
+------------------------------------------------------------------------------------
+велика картинка: bigblockTHIRD
+------------------------------------------------------------------------------------
+current listings змінюємо на: Aktuálne príležitosti investovania
+під ним:
+Čo pre vás máme pripravené.
+Під ним:
+Vzhľadom na bezpečnostnú situáciu v súčasnosti ponúkame investičné projekty len na strednej a západnej Ukrajine.
+
+Тут поки залишаємо все як у макеті:
+--- 6 najzaujímavejších projektov: 2 apartmány, 2 radovky, 2 komerčné.
+картинку змінюємо по порядку від ads1 до ads6
+
+Show all listings змінюємо на: pozriet viac ponuk (посилання буде потім)
+---------------------------------------------------------------------------------------------------------
+Блок Our People не потрібен і його потрібно замінити на такий список із заголовком, 
+можна в такому ж стилі – зліва текст а зправа іконки з заголовками.
+Výhody investovania v Ukrajine:
+
+1.	Nízka vstupná cena (icon-euro)
+2.	Vysoká výnosnosť (icon-percent)
+3.	Nízke dane (icon-tax)
+4.	Anonimita (icon-anonym)
+5.	Zvýšenie cien po ukončení aktuálneho konfliktu (icons-stocks)
+6.	Nízka vstupná cena (icon-euro) – повтор, тимчасова заглушка
+
+---------------------------------------------------------------------------------------------------------
+Newsroom змінюємо на Noviny
+Writings from estate змінюємо на: Články o investovaní v UA:
+  
+Тут залишаємо ті ж статті що в макеті. Але картинки змінюємо на news1.jpeg news2.jpeg news3.jpeg
+Newsroom змінюємо на viac novin na nasem facebook  (посилання буде потім)
+---------------------------------------------------------------------------------------------------------
+Testimonials змінюємо на Referencie
+під ним Čo hovoria naši zákazníci
+Тут залишаємо ті ж відгуки що в макеті. Слайдер.
+---------------------------------------------------------------------------------------------------------
+Seen enough? міняємо на Dost’ info?
+Під ним:
+Kontaktujte nás ešte dnes.
+під ним:
+Vyplnte formu – zavoláme pre upresnenie detailov – zabezpečíme pre Vás  video prezentáciu možných projektov podľa Vašich požiadavek – dohodneme termín obhliadky.
+
+Далі форма зворотнього зв’язку з перевіркою на правильність введення телефону у міжнародному форматі та імейлу (одне обов’язкове поле: тел або імейл):
+
+Meno:
+Telefon: 
+email:
+
+Кнопка Odoslat’
+---------------------------------------------------------------------------------------------------------
+Footer
+лише лого по центру
+Зліва замість купи тих посилань іконки соцмереж а зправа:
+newsletter
+Prihláste sa na odber nášho (zriedkavého) newslettera, kde zdieľame novinky o pripravovaných zoznamoch a projektoch.
