@@ -1,4 +1,60 @@
 //====================================================================================================
+.header {
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: rem(20);
+		padding-bottom: rem(20);
+	}
+	// .header__logo
+	&__logo {
+		max-width: rem(160);
+		img {
+			width: 100%;
+		}
+	}
+	// .header__menu
+	&__menu {
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: rem(20);
+		flex-wrap: wrap;
+	}
+	// .menu__item
+	&__item {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 16px;
+		/* identical to box height, or 107% */
+		color: #444444;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				a {
+					color: $suptitleColor;
+				}
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+	}
+}
 
 //====================================================================================================
 
