@@ -1,3 +1,49 @@
 //====================================================================================================
+.hero {
+	background: rgba(250, 250, 252, 0.78);
+	position: relative;
+	width: 100vw;
+	height: calc(100vh - 87px);
+	&::after {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: calc(100vh - 87px);
+		background: url("@img/herobackground.jpeg") center / cover no-repeat;
+	}
+	// .hero__container
+	&__container {
+		width: 100%;
+		height: calc(100vh - 87px);
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		flex: 1 1 100%;
+	}
+	// .hero__content-hero
+	&__content-hero {
+		text-align: center;
+	}
+	// .hero__img
+	&__img {
+		max-width: 100%;
+		img {
+			//1198
+			width: 29.549249%; /* 354/1198 */
+		}
+	}
+	// .hero__title
+	&__title {
+		font-size: rem(32);
+		line-height: 1.4;
+		color: $titleTextColor;
+	}
+	// .hero__next
+	&__next {
+	}
+}
 
 //====================================================================================================
