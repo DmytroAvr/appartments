@@ -19,9 +19,8 @@
 		width: 100%;
 		height: calc(100vh - 87px);
 		display: flex;
-		justify-items: center;
+		justify-content: center;
 		align-items: center;
-		flex: 1 1 100%;
 	}
 	// .hero__content-hero
 	&__content-hero {
@@ -32,7 +31,7 @@
 		max-width: 100%;
 		img {
 			//1198
-			width: 29.549249%; /* 354/1198 */
+			width: 60%; /* 354/1198 */
 		}
 	}
 	// .hero__title
@@ -46,4 +45,213 @@
 	}
 }
 
+//====================================================================================================
+.superior {
+	background: $sectionsBackground;
+	// .superior__container
+	&__container {
+		padding-top: rem(100);
+		padding-bottom: rem(100);
+	}
+	// .superior__block-title
+	&__block-title {
+	}
+	// .superior__block-text
+	&__block-text {
+		> p:last-of-type {
+			&:not(:last-child) {
+				margin-bottom: rem(20);
+			}
+		}
+	}
+	@media (min-width: $mobile) {
+		// .superior__container
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
+		}
+		// .superior__block-title
+		&__block-title {
+			max-width: 45.492487%; /* 545/1198 */
+		}
+		// .superior__block-text
+		&__block-text {
+			max-width: 46.828047%; /* 561/1198 */
+		}
+	}
+	@media (max-width: $mobile) {
+		// .superior__block-title
+		&__block-title {
+			margin-bottom: rem(15);
+		}
+	}
+}
+.title-superior {
+	// .title-superior__suptitle
+	&__suptitle {
+	}
+	// .title-superior__title
+	&__title {
+		line-height: 1.1;
+		@include adaptiveValue("font-size", 48, 30, 0, $containerWidth, 480);
+	}
+	@media (max-width: $tablet) {
+		// .title-superior__suptitle
+		&__suptitle {
+		}
+		// .title-superior__title
+		&__title {
+		}
+	}
+}
+
+.text-superior {
+	// .text-superior__text
+	&__text {
+		line-height: 1.4;
+		color: #333333;
+	}
+	// .text-superior__info-author
+	&__info-author {
+	}
+}
+.author-info {
+	display: inline-flex;
+	align-items: center;
+	column-gap: rem(8);
+	// .author-info__img-ibg
+	&__img-ibg {
+		border-radius: 50%;
+		overflow: hidden;
+		width: rem(80);
+		height: rem(80);
+		img {
+		}
+	}
+	// .author-info__about
+	&__about {
+		line-height: 1.4;
+	}
+	// .author-info__name
+	&__name {
+		color: $titleTextColor;
+	}
+	// .author-info__position
+	&__position {
+		font-size: rem(12);
+		letter-spacing: rem(2);
+		text-transform: uppercase;
+		color: $subtitleColor;
+	}
+}
+
+//====================================================================================================
+.our-requirements {
+	// .our-requirements__container
+	&__container {
+		padding-top: rem(100);
+		padding-bottom: rem(100);
+	}
+	// .our-requirements__header-row
+	&__header-row {
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+	}
+	// .our-requirements__wrapper
+	&__wrapper {
+		text-align: center;
+	}
+	// .our-requirements__content
+	&__content {
+		display: inline-flex;
+		column-gap: rem(32);
+	}
+	// .our-requirements__img
+	&__img {
+		border-radius: rem(30);
+		overflow: hidden;
+
+		max-width: rem(480);
+		max-height: rem(588);
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	// .our-requirements__block-choose
+	&__block-choose {
+	}
+}
+.requirements-header {
+	// .requirements-header__suptitle
+	&__suptitle {
+	}
+	// .requirements-header__title
+	&__title {
+		font-size: rem(36);
+		line-height: 1.2; /* 43/36 */
+		&:not(:last-child) {
+			margin-bottom: rem(13);
+		}
+	}
+	// .requirements-header__subtitle
+	&__subtitle {
+		font-size: rem(18);
+		max-width: rem(517);
+		margin: 0 auto;
+	}
+}
+
+.block-choose {
+	max-width: rem(300);
+	// .block-choose__card
+	&__card {
+		border: 1px solid rgba(202, 204, 209, 0.2);
+		border-radius: 10px;
+		overflow: hidden;
+		font-size: rem(14);
+		line-height: 1.4;
+		color: $subtitleColor;
+		text-align: left;
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: $sectionsBackground;
+			}
+		}
+	}
+	// .block-choose__wrapper
+	&__wrapper {
+		padding: rem(21) rem(21) rem(11);
+	}
+	// .block-choose__icon
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #45525b;
+		width: rem(48);
+		height: rem(48);
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+	// .block-choose__title
+	&__title {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $titleTextColor;
+	}
+	// .block-choose__about
+	&__about {
+	}
+}
+
+//====================================================================================================
+//====================================================================================================
 //====================================================================================================
