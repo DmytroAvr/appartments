@@ -31,3 +31,28 @@
 	line-height: 1.2;
 	color: $subtitleColor;
 }
+
+/*
+<div class="XXXXX__wrapper-more look-more">
+						<a class="opportunities__more look-more__link _icon-arrow-long" href="#">pozriet viac ponuk </a>
+					</div>
+*/
+.look-more {
+	text-align: center;
+	//.look-more__link
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		gap: rem(10);
+		font-size: rem(15);
+		&::before {
+			font-size: rem(11);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $suptitleColor;
+			}
+		}
+	}
+}
