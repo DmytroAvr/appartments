@@ -1,4 +1,14 @@
 // Заголовки, загальні БЕМ блоки та інше...
+
+/*
+<div class="XXXXXX__row-title title-row">
+<h3 class="title-row__suptitle suptitle suptitle--orange"></h3>
+<h2 class="title-row__title title title--section"></h2>
+<p class="title-row__subtitle subtitle"></p>
+</div>
+*/
+.title-row {
+}
 .suptitle {
 	// .suptitle--orange
 	&--orange {
@@ -19,6 +29,6 @@
 .subtitle {
 	font-size: rem(18);
 	line-height: 1.2;
-	text-align: center;
+	
 	color: $subtitleColor;
 }
