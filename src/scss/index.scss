@@ -273,6 +273,12 @@
 		line-height: 1.4;
 		color: $subtitleColor;
 		text-align: left;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background: $sectionsBackground;
+			}
+		}
 		&:not(:last-child) {
 			margin-bottom: 1.25rem;
 		}
@@ -293,11 +299,7 @@
 		display: flex;
 		column-gap: rem(10);
 		min-height: 100%;
-		@media (any-hover: hover) {
-			&:hover {
-				background: $sectionsBackground;
-			}
-		}
+
 		border: 1px solid rgba(202, 204, 209, 0.2);
 		padding: rem(21) rem(21) rem(11);
 		border-radius: 10px;
@@ -455,7 +457,6 @@
 	}
 	// .proposition-card__count-beds
 	&__count-beds {
-		
 	}
 	// .proposition-card__bathrooms
 	&__bathrooms {
