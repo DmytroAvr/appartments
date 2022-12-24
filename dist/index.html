@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="sk">
-@@include('html/_head.htm',{
-"title":"pelekhestate"
-})
+
+<head>
+	<title>pelekhestate</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221224095440">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="www.pelekhestate.sk"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">O nás</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Príležitosti investovania</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Výhody investovania</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Referencie</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Kontakt</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__content-hero">
 						<div class="hero__img">
-							<img src="@img/logo.svg" alt="www.pelekhestate.sk">
+							<img src="img/logo.svg" alt="www.pelekhestate.sk">
 						</div>
 						<h1 class="hero__title">Investičné apartmány v Ukrajine</h1>
 					</div>
@@ -32,7 +56,7 @@
 						</p>
 						<div class="text-superior__info-author author-info">
 							<div class="author-info__img-ibg">
-								<img src="@img/Andriy_Pelekh.jpg" alt="KONATEL’ Andriy Pelekh">
+								<picture><source srcset="img/Andriy_Pelekh.webp" type="image/webp"><img src="img/Andriy_Pelekh.jpg" alt="KONATEL’ Andriy Pelekh"></picture>
 							</div>
 							<div class="author-info__about">
 								<p class="author-info__name">Andriy Pelekh</p>
@@ -52,13 +76,13 @@
 					<div class="our-requirements__wrapper">
 						<div class="our-requirements__content">
 							<div class="our-requirements__img-ibg">
-								<img src="@img/advantagesSECOND.jpeg" alt="stadion Dynamo in Kyiv city">
+								<picture><source srcset="img/advantagesSECOND.webp" type="image/webp"><img src="img/advantagesSECOND.jpeg" alt="stadion Dynamo in Kyiv city"></picture>
 							</div>
 							<div class="our-requirements__choose-block block-choose">
 								<div class="block-choose__card">
 									<div class="block-choose__wrapper">
 										<div class="block-choose__icon">
-											<img src="@img/icons/location.svg" alt="">
+											<img src="img/icons/location.svg" alt="">
 										</div>
 										<div class="block-choose__text">
 											<p class="block-choose__title">ATRAKTÍVNE REGIÓNY</p>
@@ -69,7 +93,7 @@
 								<div class="block-choose__card">
 									<div class="block-choose__wrapper">
 										<div class="block-choose__icon">
-											<img src="@img/icons/foundation.svg" alt="">
+											<img src="img/icons/foundation.svg" alt="">
 										</div>
 										<div class="block-choose__text">
 											<p class="block-choose__title">KVALITA A CENA</p>
@@ -80,7 +104,7 @@
 								<div class="block-choose__card">
 									<div class="block-choose__wrapper">
 										<div class="block-choose__icon">
-											<img src="@img/icons/chair.svg" alt="">
+											<img src="img/icons/chair.svg" alt="">
 										</div>
 										<div class="block-choose__text">
 											<p class="block-choose__title">VÝNOSNOSŤ A RIZIKO</p>
@@ -94,8 +118,8 @@
 				</div>
 			</section>
 			<section class="opportunities">
-				<div class="opportunities__img-title-ibg opportunities__image-ibg"><img src="@img/bigblockTHIRD.jpeg" alt="opportunities appartments"></div>
-				<!--<div class="opportunities__img-title-ibg opportunities__image-ibg"><img data-src="@img/bigblockTHIRD.jpeg" alt="opportunities appartments"></div>-->
+				<div class="opportunities__img-title-ibg opportunities__image-ibg"><picture><source srcset="img/bigblockTHIRD.webp" type="image/webp"><img src="img/bigblockTHIRD.jpeg" alt="opportunities appartments"></picture></div>
+				<!--<div class="opportunities__img-title-ibg opportunities__image-ibg"><picture><source data-srcset="img/bigblockTHIRD.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/bigblockTHIRD.jpeg" alt="opportunities appartments"></picture></div>-->
 				<div class="opportunities__container">
 					<div class="opportunities__row-title title-row">
 						<h3 class="title-row__suptitle suptitle suptitle--orange">Aktuálne príležitosti investovania
@@ -108,10 +132,10 @@
 						<a href="#" class="proposition-card">
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition1.jpeg" alt="our proposition">
+									<picture><source srcset="img/proposition/proposition1.webp" type="image/webp"><img src="img/proposition/proposition1.jpeg" alt="our proposition"></picture>
 								</div>
 								<!--<div class="proposition-card__image-ibg">
-									<img data-src="@img/proposition/proposition1.jpeg" alt="our proposition">
+									<picture><source data-srcset="img/proposition/proposition1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/proposition/proposition1.jpeg" alt="our proposition"></picture>
 								</div>-->
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">Villa</h4>
@@ -128,10 +152,10 @@
 						<a href="#" class="proposition-card">
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition2.jpeg" alt="our proposition">
+									<picture><source srcset="img/proposition/proposition2.webp" type="image/webp"><img src="img/proposition/proposition2.jpeg" alt="our proposition"></picture>
 								</div>
 								<!--<div class="proposition-card__image-ibg">
-									<img data-src="@img/proposition/proposition2.jpeg" alt="our proposition">
+									<picture><source data-srcset="img/proposition/proposition2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/proposition/proposition2.jpeg" alt="our proposition"></picture>
 								</div>-->
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">Villa</h4>
@@ -148,10 +172,10 @@
 						<a href="#" class="proposition-card">
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition3.jpeg" alt="our proposition">
+									<picture><source srcset="img/proposition/proposition3.webp" type="image/webp"><img src="img/proposition/proposition3.jpeg" alt="our proposition"></picture>
 								</div>
 								<!--<div class="proposition-card__image-ibg">
-									<img data-src="@img/proposition/proposition3.jpeg" alt="our proposition">
+									<picture><source data-srcset="img/proposition/proposition3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/proposition/proposition3.jpeg" alt="our proposition"></picture>
 								</div>-->
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">House</h4>
@@ -168,10 +192,10 @@
 						<a href="#" class="proposition-card">
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition4.jpeg" alt="our proposition">
+									<picture><source srcset="img/proposition/proposition4.webp" type="image/webp"><img src="img/proposition/proposition4.jpeg" alt="our proposition"></picture>
 								</div>
 								<!--<div class="proposition-card__image-ibg">
-									<img data-src="@img/proposition/proposition4.jpeg" alt="our proposition">
+									<picture><source data-srcset="img/proposition/proposition4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/proposition/proposition4.jpeg" alt="our proposition"></picture>
 								</div>-->
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">Apartment</h4>
@@ -188,10 +212,10 @@
 						<a href="#" class="proposition-card">
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition5.jpeg" alt="our proposition">
+									<picture><source srcset="img/proposition/proposition5.webp" type="image/webp"><img src="img/proposition/proposition5.jpeg" alt="our proposition"></picture>
 								</div>
 								<!--<div class="proposition-card__image-ibg">
-									<img data-src="@img/proposition/proposition5.jpeg" alt="our proposition">
+									<picture><source data-srcset="img/proposition/proposition5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/proposition/proposition5.jpeg" alt="our proposition"></picture>
 								</div>-->
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">Apartment</h4>
@@ -208,10 +232,10 @@
 						<a href="#" class="proposition-card">
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition6.jpeg" alt="our proposition">
+									<picture><source srcset="img/proposition/proposition6.webp" type="image/webp"><img src="img/proposition/proposition6.jpeg" alt="our proposition"></picture>
 								</div>
 								<!--<div class="proposition-card__image-ibg">
-									<img data-src="@img/proposition/proposition6.jpeg" alt="our proposition">
+									<picture><source data-srcset="img/proposition/proposition6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/proposition/proposition6.jpeg" alt="our proposition"></picture>
 								</div>-->
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">House</h4>
@@ -237,14 +261,17 @@
 						<h2 class="title-row__title title title--section">Výhody investovania v Ukrajine:</h2>
 					</div>
 					<div class="advantages__bages badges">
-						
+
 					</div>
 				</div>
 			</section>
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
 	</div>
-	@@include('html/_js.htm',{})
+	<script src="js/app.min.js?_v=20221224095440"></script>
 </body>
 
 </html>

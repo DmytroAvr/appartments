@@ -449,18 +449,28 @@
 	}
 	// .proposition-card__beds
 	&__beds {
+		&::before {
+			font-size: rem(20);
+		}
 	}
 	// .proposition-card__count-beds
 	&__count-beds {
+		
 	}
 	// .proposition-card__bathrooms
 	&__bathrooms {
+		&::before {
+			font-size: rem(20);
+		}
 	}
 	// .proposition-card__count-bathrooms
 	&__count-bathrooms {
 	}
 	// .proposition-card__rooms
 	&__rooms {
+		&::before {
+			font-size: rem(20);
+		}
 	}
 	// .proposition-card__count-rooms
 	&__count-rooms {
