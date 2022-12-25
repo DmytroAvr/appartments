@@ -337,8 +337,15 @@
 //====================================================================================================
 .opportunities {
 	background: $sectionsBackground;
+	// .opportunities__box
+	&__box {
+		overflow: hidden;
+		max-height: 600px;
+		height: 100%;
+	}
 	// .opportunities__img-title-ibg
 	&__img-title-ibg {
+		padding-bottom: 41.666667%; /* 600/1440 */
 	}
 	// .opportunities__container
 	&__container {
@@ -507,44 +514,67 @@
 				line-height: 1.2;
 			}
 		}
-		@media (max-width: $tablet) {
+		@media (max-width: em(999.98)) {
 			margin-bottom: rem(20);
 		}
 	}
 	// .advantages__bages
 	&__bages {
 	}
-	@media (max-width: em(499.98)) {
+	@media (max-width: em(999.98)) {
 		&__row-title {
 			text-align: center;
 		}
 	}
+
 	@media (min-width: em(500)) {
-		// .advantages__container
-		&__container {
-			display: flex;
-			align-items: start;
-			justify-content: space-between;
-			flex-wrap: wrap;
-		}
 		// .advantages__bages
 		&__bages {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
+
 	@media (min-width: em(500)) and (max-width: em(999.98)) {
 		// .advantages__bages
 		&__bages {
 			margin: 0 auto;
-			grid-template-columns: repeat(2, 1fr);
 			grid-gap: em(21) em(15);
+		}
+	}
+	@media (min-width: em(500)) and (max-width: em(799.98)) {
+		// .advantages__bages
+		&__bages {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: em(600)) and (max-width: em(799.98)) {
+		&__bages {
+			& .badges__body-badge:nth-child(odd) {
+				@include adaptiveValue("margin-left", 100, 0, 1, 799, 600);
+			}
+		}
+	}
+
+	@media (min-width: em(800)) and (max-width: em(999.98)) {
+		// .advantages__bages
+		&__bages {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 	@media (min-width: em(1000)) {
 		// .advantages__bages
 		&__bages {
 			grid-gap: em(21) em(50);
+		}
+	}
+	@media (min-width: em(1000)) {
+		// .advantages__container
+		&__container {
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+			flex-wrap: wrap;
 		}
 	}
 }
@@ -566,14 +596,18 @@
 						color: $suptitleColor;
 					}
 				}
-
 				box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+				.badges__title {
+					&::after {
+						width: 100%;
+					}
+				}
 			}
 		}
 	}
 	// .badges__wrapper
 	&__wrapper {
-		padding: rem(5);
+		padding: rem(8) rem(10);
 		line-height: 1.4;
 		color: $titleTextColor;
 		display: flex;
@@ -587,6 +621,19 @@
 	// .badges__title
 	&__title {
 		max-width: rem(172);
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			width: 0;
+			height: rem(2);
+			bottom: rem(-2);
+			left: 0;
+			border: rem(2);
+			background: $suptitleColor;
+			transition: width 0.3s ease 0s;
+		}
 	}
 	// .badges__icon
 	&__icon {
@@ -810,6 +857,159 @@
 }
 //====================================================================================================
 
+.testimonials {
+	// .testimonials__container
+	&__container {
+		@include adaptiveValue("padding-top", 100, 20, 0, $containerWidth, 320);
+		@include adaptiveValue("padding-bottom", 100, 20, 0, $containerWidth, 320);
+	}
+	// .testimonials__row-title
+	&__row-title {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+		.title-row {
+			// .title-row__suptitle
+			&__suptitle {
+			}
+			// .title-row__title
+			&__title {
+				font-size: rem(36);
+				line-height: 1.2;
+			}
+		}
+		@media (max-width: em(999.98)){
+			  text-align: center;
+		}
+	}
+	// .testimonials__row-testimonial
+	&__row-testimonial {
+	}
+	// .testimonials__slider
+	&__slider {
+		margin-bottom: rem(20);
+	}
+	// .testimonials__wrapper
+	&__wrapper {
+	}
+	// .testimonials__slide
+	&__slide {
+	}
+	// .testimonials__navigations-slider
+	&__navigations-slider {
+		display: flex;
+		justify-content: flex-end;
+		column-gap: rem(10);
+	}
+}
 
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+	// .swiper-slide__wrapper
+	&__wrapper {
+		border: 1px solid rgba(82, 80, 59, 0.1);
+		border-radius: rem(4);
+	}
+	// .swiper-slide__slide-body
+	&__slide-body {
+		padding: rem(34) rem(31) rem(38);
+		padding-top: 34;
+		padding-right: 31;
+		padding-bottom: 38;
+		padding-left: 31;
+		@include adaptiveValue("padding-top", 34, 15, 0, $containerWidth, 320);
+		@include adaptiveValue("padding-bottom", 38, 18, 0, $containerWidth, 320);
+		@include adaptiveValue("padding-left", 31, 13, 0, $containerWidth, 320);
+		@include adaptiveValue("padding-right", 31, 13, 0, $containerWidth, 320);
+	}
+	// .swiper-slide__rating-row
+	&__rating-row {
+		pointer-events: none;
+		margin-bottom: rem(6);
+	}
+	// .swiper-slide__testimonial-title
+	&__testimonial-title {
+		font-size: rem(24);
+		line-height: 1.2;
+		margin-bottom: rem(11);
+	}
+	// .swiper-slide__testimonial-text
+	&__testimonial-text {
+		font-size: rem(15);
+		line-height: 1.5;
+		margin-bottom: rem(19);
+	}
+	// .swiper-slide__testimonial-author
+	&__testimonial-author {
+		line-height: 1;
+		color: $titleTextColor;
+		padding-left: rem(12);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: rem(2);
+			height: rem(24);
+			bottom: 0;
+			left: 0;
+			transform: translateY(25%);
+			background: $suptitleColor;
+		}
+	}
+}
+.rating {
+	// .rating__body
+	&__body {
+	}
+	// .rating__active
+	&__active {
+	}
+	// .rating__items
+	&__items {
+	}
+	// .rating__item
+	&__item {
+	}
+	// .rating__value
+	&__value {
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	font-size: rem(20);
+	border: 2px solid #52503b;
+	color: #52503b;
+	border-radius: 50%;
+	width: rem(60);
+	height: rem(60);
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			border: 2px solid $suptitleColor;
+			color: $suptitleColor;
+		}
+	}
+}
+.swiper-button-prev {
+	&::before {
+		transform: rotate(90deg);
+	}
+}
+.swiper-button-next {
+	&::before {
+		transform: rotate(-90deg);
+	}
+}
+
+.swiper-button-disabled {
+	border: 2px solid rgba(82, 80, 59, 0.3);
+	color: rgba(82, 80, 59, 0.3);
+	pointer-events: none;
+}
 //====================================================================================================
 //====================================================================================================

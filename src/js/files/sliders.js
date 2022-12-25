@@ -35,8 +35,8 @@ function initSliders() {
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
 
@@ -46,14 +46,13 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
-			// Ефекти
+			
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+		
 
 			// Пагінація
 			/*
@@ -76,28 +75,23 @@ function initSliders() {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
 			},
-			/*
+			
+		
 			// Брейкпоінти
 			breakpoints: {
-				640: {
+				1: {
 					slidesPerView: 1,
 					spaceBetween: 0,
 					autoHeight: true,
 				},
-				768: {
+				
+				992: {
 					slidesPerView: 2,
 					spaceBetween: 20,
 				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
+				
 			},
-			*/
+		
 			// Події
 			on: {
 
