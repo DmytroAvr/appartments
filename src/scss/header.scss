@@ -11,6 +11,8 @@
 	// .header__logo
 	&__logo {
 		max-width: rem(160);
+		position: relative;
+		z-index: 5;
 		img {
 			width: 100%;
 		}
@@ -25,6 +27,27 @@
 	}
 	// .menu__body
 	&__body {
+		@media (max-width: $mobile) {
+			// burger part
+			// burger part
+			// add after with bg if you have some icons
+			// burger part
+			// burger part
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			right: -100%;
+			top: 0;
+			background-color: $sectionsBackground;
+			z-index: 4;
+			padding: rem(100) rem(15) rem(30);
+			overflow: auto;
+			transition: right 0.3s ease 0s;
+			text-align: center;
+		}
+		.menu-open & {
+			right: 0;
+		}
 	}
 	// .menu__list
 	&__list {
@@ -32,6 +55,12 @@
 		align-items: center;
 		column-gap: rem(20);
 		flex-wrap: wrap;
+		@media (max-width: $mobile) {
+			// burger part
+			// burger part
+			flex-direction: column;
+			row-gap: rem(40);
+		}
 	}
 	// .menu__item
 	&__item {
@@ -53,6 +82,10 @@
 	}
 	// .menu__link
 	&__link {
+		@media (max-width: $mobile) {
+			// burger part
+			font-size: rem(35);
+		}
 	}
 }
 

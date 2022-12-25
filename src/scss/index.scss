@@ -878,8 +878,8 @@
 				line-height: 1.2;
 			}
 		}
-		@media (max-width: em(999.98)){
-			  text-align: center;
+		@media (max-width: em(999.98)) {
+			text-align: center;
 		}
 	}
 	// .testimonials__row-testimonial
@@ -1011,5 +1011,107 @@
 	color: rgba(82, 80, 59, 0.3);
 	pointer-events: none;
 }
+//====================================================================================================
+.contact-us {
+	background: $titleTextColor;
+	// .contact-us__container
+	&__container {
+		@include adaptiveValue("padding-top", 100, 20, 0, $containerWidth, 320);
+		@include adaptiveValue("padding-bottom", 100, 20, 0, $containerWidth, 320);
+	}
+	// .contact-us__row-title
+	&__row-title {
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+		.title-row {
+			// .title-row__suptitle
+			&__suptitle {
+				line-height: 1.4;
+				color: $sectionsBackground;
+			}
+			// .title-row__title
+			&__title {
+				font-size: rem(36);
+				line-height: 1.2;
+				color: #ffffff;
+				&:not(:last-child) {
+					margin-bottom: rem(13);
+				}
+			}
+			// .title-row__subtitle
+			&__subtitle {
+				font-size: rem(18);
+				line-height: 1.2;
+				color: $sectionsBackground;
+				margin: 0 auto;
+				max-width: rem(657);
+			}
+		}
+	}
+	// .contact-us__form
+	&__form {
+	}
+}
+
+.contact-form {
+	// .contact-form__input-row
+	&__input-row {
+		display: block;
+		margin: 0 auto;
+		max-height: rem(53);
+		max-width: rem(458);
+		text-align: center;
+		border-radius: rem(8);
+		//overflow: hidden;
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+		input {
+			padding: rem(14) rem(34) rem(16);
+			line-height: 1.4;
+			color: $subtitleColor;
+
+			width: 100%;
+
+			&::placeholder {
+				line-height: 1.4;
+				color: $subtitleColor;
+			}
+		}
+		// .contact-form__input-row--name
+		&--name {
+		}
+		// .contact-form__input-row--tel
+		&--tel {
+		}
+		// .contact-form__input-row--email
+		&--email {
+		}
+		// .contact-form__input-row--send
+		&--send {
+		}
+		.button {
+			background: #ffffff;
+			border-radius: 6px;
+			font-size: rem(18);
+			line-height: 1.2;
+			color: $titleTextColor;
+			padding: rem(10) rem(18);
+			transition: all 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					background: $suptitleColor;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+//====================================================================================================
+//====================================================================================================
+
 //====================================================================================================
 //====================================================================================================
