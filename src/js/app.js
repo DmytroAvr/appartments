@@ -32,7 +32,7 @@ flsFunctions.addLoadedClass();
 /* Модуль для роботи з меню (Бургер) */
 flsFunctions.menuInit();
 /* Враховування плаваючої панелі на мобільних пристроях при 100vh */
-flsFunctions.fullVHfix();
+//flsFunctions.fullVHfix();
 
 /*
 Модуль "Спойлери"
@@ -97,13 +97,13 @@ flsForms.formFieldsInit({
 */
 /* Надсилання форми */
 /* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Модуль форми "кількість" */
 // flsForms.formQuantity();
 
 /* Модуль зіркового рейтингу */
-// flsForms.formRating();
+flsForms.formRating();
 
 /* Модуль роботи з select. */
 // import './libs/select.js'
@@ -165,7 +165,7 @@ import "./files/sliders.js";
 // Документація по роботі у шаблоні: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html
 // Документація плагіна: https://github.com/verlok/vanilla-lazyload
 // Сніппет(HTML):
-// import './files/scroll/lazyload.js';
+//import './files/scroll/lazyload.js';
 
 // Спостерігач за об'єктами з атрибутом data-watch
 // Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
