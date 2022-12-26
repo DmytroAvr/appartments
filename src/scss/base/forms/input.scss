@@ -18,11 +18,15 @@ textarea {
 	&._form-focus {
 	}
 	&._form-error {
-		border-color: transparent;
-		background: opacify($suptitleColor, 0.9);
+		background: rgba(255, 138, 99, 0.5);
+		color: #fff;
 	}
 }
 textarea.input {
 	resize: none;
 	padding: 0px 0px;
+}
+
+.form__error {
+	color: $suptitleColor;
 }
