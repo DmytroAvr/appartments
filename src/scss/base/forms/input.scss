@@ -14,9 +14,12 @@ textarea {
 	display: block;
 	padding: 0px rem(20);
 	border: rem(1) solid #eee;
+	position: relative;
 	&._form-focus {
 	}
 	&._form-error {
+		border-color: transparent;
+		background: opacify($suptitleColor, 0.9);
 	}
 }
 textarea.input {

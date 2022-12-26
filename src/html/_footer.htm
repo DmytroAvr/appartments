@@ -1,4 +1,8 @@
 <footer class="footer">
+
+	<!--footer1 original-->
+	<!--footer1 original-->
+
 	<div class="footer1__container">
 		<a href="#top" class="footer1__logo">
 			<img src="@img/logo.svg" alt="logo">
@@ -36,10 +40,10 @@
 							<h2 class="title-row__title title title--section">Prihláste sa na odber nášho (zriedkavého) newslettera, kde zdieľame novinky o pripravovaných zoznamoch a projektoch.</h2>
 						</div>
 					</div>
-					<form class="subscribe__form" action="files/sendmail/sendmail.php" method="POST">
+					<form class="subscribe__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 						<div class="subscribe__row-form">
 							<label for="subscribe-email" hidden>email</label>
-							<input id="subscribe-email" type="text" name="form[email]" data-error="Error" placeholder="Email" class="input">
+							<input id="subscribe-email" type="email" name="form[email]" data-error="Error" placeholder="Email" class="input">
 
 							<label for="subscribe-send" hidden>Odoslat’</label>
 							<button id="subscribe-send" type="submit" class="button">Odoslat’</button>
@@ -49,6 +53,10 @@
 			</div>
 		</div>
 	</div>
+
+	<!--footer1 original-->
+	<!--footer1 original-->
+
 
 	<!-- my proposition -->
 	<p class="proposition">my proposition</p>
@@ -93,10 +101,10 @@
 						<h2 class="title-row__title title title--section">Prihláste sa na odber nášho (zriedkavého) newslettera, kde zdieľame novinky o pripravovaných zoznamoch a projektoch.</h2>
 					</div>
 				</div>
-				<form class="subscribe__form" action="files/sendmail/sendmail.php" method="POST">
+				<form class="subscribe__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 					<div class="subscribe__row-form">
 						<label for="subscribe-email" hidden>email</label>
-						<input id="subscribe-email" type="text" name="form[email]" data-error="Error" placeholder="Email" class="input">
+						<input id="subscribe-email" type="email" name="form[email]" data-error="Error" data-required="email-sub" placeholder="Email" class="input">
 
 						<label for="subscribe-send" hidden>Odoslat’</label>
 						<button id="subscribe-send" type="submit" class="button">Odoslat’</button>

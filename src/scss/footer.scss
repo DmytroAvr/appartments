@@ -172,7 +172,9 @@
 //====================================================================================================
 //====================================================================================================
 //====================================================================================================
-
+//footer1 original
+//footer1 original
+//footer1 original
 .footer1 {
 	// .footer1__container
 	&__container {
@@ -205,6 +207,7 @@
 			display: flex;
 			justify-content: space-between;
 			column-gap: rem(10);
+			align-items: center;
 		}
 	}
 	// .footer1__social
@@ -239,46 +242,7 @@
 			margin-bottom: rem(20);
 		}
 	}
-
-	.subscribe {
-		// .subscribe__wrapper
-		&__wrapper {
-		}
-		// .subscribe__body
-		&__body {
-		}
-		// .subscribe__row-title
-		&__row-title {
-		}
-		// .subscribe__form
-		&__form {
-		}
-		// .subscribe__row-form
-		&__row-form {
-		}
-	}
-	.title-row {
-		// .title-row__suptitle
-		&__suptitle {
-		}
-		// .title-row__title
-		&__title {
-		}
-	}
-	.suptitle {
-		// .suptitle--orange
-		&--orange {
-		}
-	}
-	.title {
-		// .title--section
-		&--section {
-		}
-	}
-	.input {
-	}
-	.button {
-	}
 }
-
+//footer1 original
+//footer1 original
 //====================================================================================================
