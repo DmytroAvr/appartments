@@ -531,23 +531,23 @@
 						<!-- (одне обов’язкове поле: тел або імейл): -->
 						<!-- input number -->
 						<div class="contact-form__input-row contact-form__input-row--name">
-							<label for="contacts-name" hidden>Meno:</label>
-							<input autocomplete="off" type="text" name="form[name]" data-error="Omyl. Zadajte svoje meno" placeholder="Meno:" class="input" id="contacts-name">
+							<label for="contactsName" hidden>Meno:</label>
+							<input autocomplete="off" type="text" name="form[name]" data-error="Omyl. Zadajte svoje meno" placeholder="Meno:" class="input" id="contactsName">
 						</div>
 						<!--inpur tel-->
 						<div class="contact-form__input-row contact-form__input-row--tel">
-							<label for="contacts-tel" hidden>Telefon:</label>
-							<input autocomplete="off" type="text" name="form[tel]" data-error="Omyl. Zadajte telefónne číslo alebo e-mail" data-required="telephone" placeholder="Telefon:" class="input" id="contacts-tel">
+							<label for="contactsTel" hidden>Telefon:</label>
+							<input autocomplete="off" type="tel" name="form[tel]" data-error="Omyl. Zadajte telefónne číslo alebo e-mail" data-required="telephone" placeholder="Telefon:" class="input" id="contactsTel">
 						</div>
 						<!--inpur mail-->
 						<div class="contact-form__input-row contact-form__input-row--email">
-							<label for="contacts-email" hidden>email:</label>
-							<input type="text" name="form[email]" data-error="Omyl. Zadajte telefónne e-mail alebo číslo" data-required="email" placeholder="email:" class="input" id="contacts-email">
+							<label for="contactsEmail" hidden>email:</label>
+							<input type="text" name="form[email]" data-error="Omyl. Zadajte telefónne e-mail alebo číslo" data-required="email" placeholder="email:" class="input" id="contactsEmail">
 						</div>
 						<!-- send -->
 						<div class="contact-form__input-row contact-form__input-row--send">
-							<label for="send-contacts" hidden>Odoslat’ kontaktné informácie</label>
-							<button type="submit" class="button" id="send-contacts" onclick="validateAndSend()">Odoslat’</button>
+							<label for="sendContacts" hidden>Odoslat’ kontaktné informácie</label>
+							<button type="submit" class="button" id="sendContacts" onclick="validateAndSend()">Odoslat’</button>
 						</div>
 					</form>
 				</div>
