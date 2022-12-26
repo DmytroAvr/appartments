@@ -1,5 +1,19 @@
 // Заголовки, загальні БЕМ блоки та інше...
-
+a {
+	&:focus {
+		outline: none;
+		color: $suptitleColor;
+		text-shadow: 1px 1px 2px $suptitleColor;
+	}
+}
+/*
+&:focus {
+	outline: 1px solid $suptitleColor;
+	box-shadow: 2px 2px 6px #ff8a63;
+	text-shadow: 1px 1px 2px none;
+	color: auto;
+}
+*/
 /*
 <div class="XXXXXX__row-title title-row">
 <h3 class="title-row__suptitle suptitle suptitle--orange"></h3>
@@ -46,7 +60,7 @@
 		flex-direction: row-reverse;
 		gap: rem(10);
 		font-size: rem(15);
-		transition: all .3s ease 0s;
+		transition: all 0.3s ease 0s;
 		&::before {
 			font-size: rem(11);
 		}

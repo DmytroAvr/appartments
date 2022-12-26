@@ -417,6 +417,14 @@
 	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
 	border-radius: rem(8);
 	overflow: hidden;
+
+	&:focus {
+		outline: 1px solid $suptitleColor;
+		box-shadow: 2px 2px 6px $suptitleColor;
+		text-shadow: none;
+		color: auto;
+	}
+
 	// .proposition-card__wrapper
 	&__wrapper {
 	}
@@ -705,6 +713,13 @@
 	}
 	// .news-cards__wrapper-cards
 	&__wrapper-cards {
+		display: block;
+		&:focus {
+			outline: 1px solid $suptitleColor;
+			box-shadow: 2px 2px 6px $suptitleColor;
+			text-shadow: none;
+			color: auto;
+		}
 	}
 	// .news-cards__image-ibg
 	&__image-ibg {
@@ -994,6 +1009,16 @@
 			color: $suptitleColor;
 		}
 	}
+	&:focus {
+		outline: 1px solid $suptitleColor;
+		box-shadow: 2px 2px 6px $suptitleColor;
+		text-shadow: none;
+		color: $suptitleColor;
+		border: 1px solid $suptitleColor;
+		&::before {
+			transform: scale(1.2), rotate(90deg);
+		}
+	}
 }
 .swiper-button-prev {
 	&::before {
@@ -1064,17 +1089,21 @@
 		max-width: rem(458);
 		text-align: center;
 		border-radius: rem(8);
-		//overflow: hidden;
 		&:not(:last-child) {
-			margin-bottom: rem(10);
+			margin-bottom: rem(15);
 		}
 		input {
 			padding: rem(14) rem(34) rem(16);
 			line-height: 1.4;
-			color: $subtitleColor;
-
+			border-radius: rem(8);
+			overflow: hidden;
 			width: 100%;
-
+			color: $titleTextColor;
+			transition: all 0.3s ease 0s;
+			&:focus {
+				outline: 1px solid $suptitleColor;
+				box-shadow: 2px 2px 6px $suptitleColor;
+			}
 			&::placeholder {
 				line-height: 1.4;
 				color: $subtitleColor;
@@ -1082,6 +1111,9 @@
 		}
 		// .contact-form__input-row--name
 		&--name {
+			&.contact-form__input-row {
+				margin-bottom: rem(25);
+			}
 		}
 		// .contact-form__input-row--tel
 		&--tel {
@@ -1091,6 +1123,7 @@
 		}
 		// .contact-form__input-row--send
 		&--send {
+			padding-top: rem(10);
 		}
 		.button {
 			background: #ffffff;
@@ -1105,6 +1138,12 @@
 					background: $suptitleColor;
 					color: #fff;
 				}
+			}
+			&:focus {
+				outline: 1px solid $suptitleColor;
+				box-shadow: 2px 2px 6px $suptitleColor;
+				background: $suptitleColor;
+				color: #fff;
 			}
 		}
 	}

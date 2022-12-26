@@ -16,6 +16,10 @@
 		img {
 			width: 100%;
 		}
+		transition: all 0.3s ease 0s;
+		&:focus {
+			transform: scale(1.2);
+		}
 	}
 	// .header__menu
 	&__menu {
