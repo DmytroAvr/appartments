@@ -71,3 +71,57 @@ a {
 		}
 	}
 }
+
+@keyframes bounce {
+	0% {
+		transform: translate(-50%, 0);
+	}
+	50% {
+		transform: translate(-50%, -10%);
+	}
+	100% {
+		transform: translate(-50%, 0);
+	}
+}
+
+.to-top {
+	z-index: 5;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	transform: translate(-50%, 0);
+	font-size: rem(20);
+	border: 2px solid #52503b;
+	color: #52503b;
+	border-radius: 50%;
+	width: rem(60);
+	height: rem(60);
+	transition: all 0.3s ease 0s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	animation: bounce 1.5s ease 0s infinite normal;
+	&:focus {
+		color: #52503b;
+		text-shadow: none;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			border: 2px solid $suptitleColor;
+			color: $suptitleColor;
+		}
+	}
+	&::before {
+		transform: rotate(180deg);
+		z-index: 6;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.4);
+		border-radius: 50%;
+	}
+}

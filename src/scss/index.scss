@@ -43,6 +43,41 @@
 	}
 	// .hero__next
 	&__next {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-size: rem(20);
+		border: 2px solid #52503b;
+		color: #52503b;
+		border-radius: 50%;
+		width: rem(60);
+		height: rem(60);
+		transition: all 0.3s ease 0s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+
+		animation: bounce 1.5s ease 0s infinite normal;
+		@media (any-hover: hover) {
+			&:hover {
+				border: 2px solid $suptitleColor;
+				color: $suptitleColor;
+			}
+		}
+		&:focus {
+			outline: 1px solid $suptitleColor;
+			box-shadow: 2px 2px 6px $suptitleColor;
+			text-shadow: none;
+			color: $suptitleColor;
+			border: 1px solid $suptitleColor;
+			&::before {
+				transform: scale(1.2), rotate(90deg);
+			}
+		}
+
+		
 	}
 }
 
