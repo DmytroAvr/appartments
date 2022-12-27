@@ -8,32 +8,32 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
-			<a data-goto=".header" class="to-top _icon-arrow go-to" href="#"></a>
+			<a data-goto=".header" class="to-top _icon-arrow go-to to-top--hide" href="#"></a>
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__content-hero">
 						<div class="hero__img">
-							<img src="@img/logo.svg" alt="www.pelekhestate.sk">
+							<img data-src="@img/logo.svg" alt="www.pelekhestate.sk">
 						</div>
 						<h1 class="hero__title">Investičné apartmány v Ukrajine</h1>
 					</div>
-					<a data-goto=".superior__container" class="hero__next _icon-arrow go-to" href="#"></a>
+					<a data-goto=".superior__container" class="hero__next _icon-arrow go-to" href="#" data-watch data-watch-threshold="0.7" data-watch-once></a>
 				</div>
 			</section>
-			<section class="superior" id="about-us">
+			<section class="superior" id="about-us" data-watch data-watch-threshold="0.3" data-watch-once>
 				<div class="superior__container">
 					<div class="superior__row-title title-row">
 						<h3 class="title-row__suptitle suptitle suptitle--orange">Náš cieľ</h3>
 						<h2 class="title-row__title title title--section">Nájdeme pre Vás investičný byt, apartmán s atraktívnym výnosom na Ukrajine.</h2>
 					</div>
 
-					<div class="superior__block-text text-superior">
+					<div class="superior__block-text text-superior" data-watch data-watch-threshold="0.7" data-watch-once>
 						<p class="text-superior__text">Pelekh Agency pôsobí v investičnom a realitnom sektore na Ukrajine a pre zákazníkov z EU je na trhu od roku 2018. Začiatkom našej činnosti v EU bolo personálne poradenstvo a nábor zamestnancov, pri čom táto aktivita bola na UA vyvíjaná od roku 2002 cez 15 pobočiek po celej Ukrajine.</p>
 						<p class="text-superior__text">Ukrajina sa stáva čoraz atraktívnejšou pre investície do realitných projektov vďaka integrácii s EÚ, posilňovaniu národnej meny po kríze a takmer nepretržite rastúcim cenám realít, najmä vo veľkých mestách ako sú napríklad Kyjev, Lvov a ďalsie maestá.
 						</p>
 						<div class="text-superior__info-author author-info">
 							<div class="author-info__img-ibg">
-								<img src="@img/Andriy_Pelekh.jpg" alt="KONATEL’ Andriy Pelekh">
+								<img data-src="@img/Andriy_Pelekh.jpg" alt="KONATEL’ Andriy Pelekh">
 							</div>
 							<div class="author-info__about">
 								<p class="author-info__name">Andriy Pelekh</p>
@@ -42,8 +42,10 @@
 						</div>
 					</div>
 				</div>
+
+
 			</section>
-			<section class="our-requirements" id="our-requirements">
+			<section class="our-requirements" id="our-requirements" >
 				<div class="our-requirements__container">
 					<div class="our-requirements__row-title title-row">
 						<h3 class="title-row__suptitle suptitle suptitle--orange">Naše požiadavky</h3>
@@ -53,13 +55,13 @@
 					<div class="our-requirements__wrapper">
 						<div class="our-requirements__content">
 							<div class="our-requirements__img-ibg">
-								<img src="@img/advantagesSECOND.jpeg" alt="štadión Dynamo v meste Kyjev">
+								<img data-src="@img/advantagesSECOND.jpeg" alt="štadión Dynamo v meste Kyjev">
 							</div>
 							<div class="our-requirements__choose-block block-choose">
-								<div class="block-choose__card">
+								<div class="block-choose__card" data-watch data-watch-threshold="0.4" data-watch-once>
 									<div class="block-choose__wrapper">
 										<div class="block-choose__icon">
-											<img src="@img/icons/our-requirements/location.svg" alt="umiestnenie symbol">
+											<img data-src="@img/icons/our-requirements/location.svg" alt="umiestnenie symbol">
 										</div>
 										<div class="block-choose__text">
 											<p class="block-choose__title">ATRAKTÍVNE REGIÓNY</p>
@@ -67,10 +69,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="block-choose__card">
+								<div class="block-choose__card" data-watch data-watch-threshold="0.4" data-watch-once>
 									<div class="block-choose__wrapper">
 										<div class="block-choose__icon">
-											<img src="@img/icons/our-requirements/foundation.svg" alt="základ symbol">
+											<img data-src="@img/icons/our-requirements/foundation.svg" alt="základ symbol">
 										</div>
 										<div class="block-choose__text">
 											<p class="block-choose__title">KVALITA A CENA</p>
@@ -78,10 +80,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="block-choose__card">
+								<div class="block-choose__card" data-watch data-watch-threshold="0.4" data-watch-once>
 									<div class="block-choose__wrapper">
 										<div class="block-choose__icon">
-											<img src="@img/icons/our-requirements/chair.svg" alt="stolička symbol">
+											<img data-src="@img/icons/our-requirements/chair.svg" alt="stolička symbol">
 										</div>
 										<div class="block-choose__text">
 											<p class="block-choose__title">VÝNOSNOSŤ A RIZIKO</p>
@@ -96,8 +98,7 @@
 			</section>
 			<section class="opportunities">
 				<div class="opportunities__box">
-					<div class="opportunities__img-title-ibg"><img src="@img/bigblockTHIRD.jpeg" alt="príležitostné byty"></div>
-					<!--<div class="opportunities__img-title-ibg"><img data-src="@img/bigblockTHIRD.jpeg" alt="opportunities appartments"></div>-->
+					<div class="opportunities__img-title-ibg"><img data-src="@img/bigblockTHIRD.jpeg" alt="príležitostné byty"></div>
 				</div>
 				<div class="opportunities__container">
 					<div class="opportunities__row-title title-row">
@@ -108,14 +109,12 @@
 					</div>
 					<div class="opportunities__block-propositions">
 						<!-- card1 -->
-						<a href="#" class="proposition-card">
+						<a href="#" class="proposition-card" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition1.jpeg" alt="náš návrh">
-								</div>
-								<!--<div class="proposition-card__image-ibg">
 									<img data-src="@img/proposition/proposition1.jpeg" alt="náš návrh">
-								</div>-->
+								</div>
+
 								<div class="proposition-card__info-block">
 									<h4 class="proposition-card__suptitle">Villa</h4>
 									<h3 class="proposition-card__title">Welford Gardens</h3>
@@ -128,10 +127,10 @@
 							</div>
 						</a>
 						<!-- card2 -->
-						<a href="#" class="proposition-card">
+						<a href="#" class="proposition-card" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition2.jpeg" alt="náš návrh">
+									<img data-src="@img/proposition/proposition2.jpeg" alt="náš návrh">
 								</div>
 								<!--<div class="proposition-card__image-ibg">
 									<img data-src="@img/proposition/proposition2.jpeg" alt="náš návrh">
@@ -148,10 +147,10 @@
 							</div>
 						</a>
 						<!-- card3 -->
-						<a href="#" class="proposition-card">
+						<a href="#" class="proposition-card" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition3.jpeg" alt="náš návrh">
+									<img data-src="@img/proposition/proposition3.jpeg" alt="náš návrh">
 								</div>
 								<!--<div class="proposition-card__image-ibg">
 									<img data-src="@img/proposition/proposition3.jpeg" alt="náš návrh">
@@ -168,10 +167,10 @@
 							</div>
 						</a>
 						<!-- card4 -->
-						<a href="#" class="proposition-card">
+						<a href="#" class="proposition-card" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition4.jpeg" alt="náš návrh">
+									<img data-src="@img/proposition/proposition4.jpeg" alt="náš návrh">
 								</div>
 								<!--<div class="proposition-card__image-ibg">
 									<img data-src="@img/proposition/proposition4.jpeg" alt="náš návrh">
@@ -188,10 +187,10 @@
 							</div>
 						</a>
 						<!-- card5 -->
-						<a href="#" class="proposition-card">
+						<a href="#" class="proposition-card" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition5.jpeg" alt="náš návrh">
+									<img data-src="@img/proposition/proposition5.jpeg" alt="náš návrh">
 								</div>
 								<!--<div class="proposition-card__image-ibg">
 									<img data-src="@img/proposition/proposition5.jpeg" alt="náš návrh">
@@ -208,10 +207,10 @@
 							</div>
 						</a>
 						<!-- card6 -->
-						<a href="#" class="proposition-card">
+						<a href="#" class="proposition-card" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="proposition-card__wrapper">
 								<div class="proposition-card__image-ibg">
-									<img src="@img/proposition/proposition6.jpeg" alt="náš návrh">
+									<img data-src="@img/proposition/proposition6.jpeg" alt="náš návrh">
 								</div>
 								<!--<div class="proposition-card__image-ibg">
 									<img data-src="@img/proposition/proposition6.jpeg" alt="náš návrh">
@@ -241,70 +240,70 @@
 					</div>
 					<div class="advantages__bages badges">
 						<!--badge1-->
-						<div class="badges__body-badge">
+						<div class="badges__body-badge" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="badges__wrapper">
 								<div class="badges__text-wrapper">
 									<h6 class="badges__title">Nízka vstupná cena</h6>
 								</div>
 								<div class="badges__icon 11_icon-icon-euro">
-									<img src="@img/icons/advantages/icon-euro.svg" alt="symbol eura">
+									<img data-src="@img/icons/advantages/icon-euro.svg" alt="symbol eura">
 								</div>
 							</div>
 						</div>
 						<!--badge2-->
-						<div class="badges__body-badge">
+						<div class="badges__body-badge" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="badges__wrapper">
 								<div class="badges__text-wrapper">
 									<h6 class="badges__title">Vysoká výnosnosť</h6>
 								</div>
 								<div class="badges__icon 11_icon-icon-percent">
-									<img src="@img/icons/advantages/icon-percent.svg" alt="symbol percent">
+									<img data-src="@img/icons/advantages/icon-percent.svg" alt="symbol percent">
 								</div>
 							</div>
 						</div>
 						<!--badge3-->
-						<div class="badges__body-badge">
+						<div class="badges__body-badge" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="badges__wrapper">
 								<div class="badges__text-wrapper">
 									<h6 class="badges__title">Nízke dane</h6>
 								</div>
 								<div class="badges__icon 11_icon-icon-tax">
-									<img src="@img/icons/advantages/icon-tax.svg" alt="symbolová daň">
+									<img data-src="@img/icons/advantages/icon-tax.svg" alt="symbolová daň">
 								</div>
 							</div>
 						</div>
 						<!--badge4-->
-						<div class="badges__body-badge">
+						<div class="badges__body-badge" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="badges__wrapper">
 								<div class="badges__text-wrapper">
 									<h6 class="badges__title">Nízke dane</h6>
 								</div>
 								<div class="badges__icon 11_icon-icon-anonym">
-									<img src="@img/icons/advantages/icon-anonym.svg" alt="symbol anonym">
+									<img data-src="@img/icons/advantages/icon-anonym.svg" alt="symbol anonym">
 
 								</div>
 							</div>
 						</div>
 						<!--badge5-->
-						<div class="badges__body-badge">
+						<div class="badges__body-badge" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="badges__wrapper">
 								<div class="badges__text-wrapper">
 									<h6 class="badges__title">Zvýšenie cien po ukončení aktuálneho konfliktu</h6>
 								</div>
 								<div class="badges__icon 11_icon-icons-stocks">
-									<img src="@img/icons/advantages/icons-stocks.svg" alt="symbol akcií">
+									<img data-src="@img/icons/advantages/icons-stocks.svg" alt="symbol akcií">
 
 								</div>
 							</div>
 						</div>
 						<!--badge6 ##-->
-						<div class="badges__body-badge">
+						<div class="badges__body-badge" data-watch data-watch-threshold="0.4" data-watch-once>
 							<div class="badges__wrapper">
 								<div class="badges__text-wrapper">
 									<h6 class="badges__title">Nízka vstupná cena</h6>
 								</div>
 								<div class="badges__icon 11_icon-icon-euro">
-									<img src="@img/icons/advantages/icon-euro.svg" alt="icon euro">
+									<img data-src="@img/icons/advantages/icon-euro.svg" alt="icon euro">
 
 								</div>
 							</div>
@@ -312,7 +311,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="news">
+			<section class="news" data-watch data-watch-threshold="0.4" data-watch-once>
 				<div class="news__container">
 					<div class="news__row-title title-row">
 						<h3 class="title-row__suptitle suptitle suptitle--orange">Noviny</h3>
@@ -322,7 +321,7 @@
 						<!--card1-->
 						<div class="news-cards__card">
 							<a href="#" class="news-cards__wrapper-cards">
-								<div class="news-cards__image-ibg"><img src="@img/news/news1.jpeg" alt="Články o investovaní v UA"></div>
+								<div class="news-cards__image-ibg"><img data-src="@img/news/news1.jpeg" alt="Články o investovaní v UA"></div>
 								<!--<div class="news-cards__image-ibg"><img data-src="@img/news/news1.jpeg" alt="Články o investovaní v UA"></div>-->
 								<div class="news-cards__block-title-about news-title">
 									<p class="news-title__suptitle suptitle suptitle--orange">Press release</p>
@@ -334,7 +333,7 @@
 						<!--card2-->
 						<div class="news-cards__card">
 							<a href="#" class="news-cards__wrapper-cards">
-								<div class="news-cards__image-ibg"><img src="@img/news/news2.jpeg" alt="Články o investovaní v UA"></div>
+								<div class="news-cards__image-ibg"><img data-src="@img/news/news2.jpeg" alt="Články o investovaní v UA"></div>
 								<!--<div class="news-cards__image-ibg"><img data-src="@img/news/news2.jpeg" alt="Články o investovaní v UA"></div>-->
 								<div class="news-cards__block-title-about news-title">
 									<p class="news-title__suptitle suptitle suptitle--orange">Announcement</p>
@@ -346,7 +345,7 @@
 						<!--card3-->
 						<div class="news-cards__card">
 							<a href="#" class="news-cards__wrapper-cards">
-								<div class="news-cards__image-ibg"><img src="@img/news/news3.jpeg" alt="Články o investovaní v UA"></div>
+								<div class="news-cards__image-ibg"><img data-src="@img/news/news3.jpeg" alt="Články o investovaní v UA"></div>
 								<!--<div class="news-cards__image-ibg"><img data-src="@img/news/news3.jpeg" alt="Články o investovaní v UA"></div>-->
 								<div class="news-cards__block-title-about news-title">
 									<p class="news-title__suptitle suptitle suptitle--orange">Company news</p>
@@ -361,7 +360,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="testimonials" id="testimonials">
+			<section class="testimonials" id="testimonials" data-watch data-watch-threshold="0.4" data-watch-once>
 				<div class="testimonials__container">
 					<div class="testimonials__row-title title-row">
 						<h3 class="title-row__suptitle suptitle suptitle--orange">Referencie</h3>
@@ -538,7 +537,7 @@
 						<!--inpur tel-->
 						<div class="contact-form__input-row contact-form__input-row--tel">
 							<label for="contactsTel" hidden>Telefon:</label>
-							<input autocomplete="off" type="tel" name="form[tel]" data-error="Omyl. Zadajte telefónne číslo alebo e-mail" data-required="telephone" placeholder="Telefon:" class="input" id="contactsTel">
+							<input autocomplete="off" type="tel" name="form[tel]" data-error="Omyl. Zadajte telefónne číslo alebo e-mail" data-required="telephone" placeholder="Telefon: +421 " class="input" id="contactsTel">
 						</div>
 						<!--inpur mail-->
 						<div class="contact-form__input-row contact-form__input-row--email">
@@ -548,7 +547,7 @@
 						<!-- send -->
 						<div class="contact-form__input-row contact-form__input-row--send">
 							<label for="sendContacts" hidden>Odoslat’ kontaktné informácie</label>
-							<button type="submit" class="button" id="sendContacts" onclick="validateAndSend()">Odoslat’</button>
+							<button type="submit" class="button" id="sendContacts">Odoslat’</button>
 						</div>
 					</form>
 				</div>

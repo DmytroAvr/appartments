@@ -100,7 +100,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	opacity: 0;
 	animation: bounce 1.5s ease 0s infinite normal;
 	&:focus {
 		color: #52503b;
@@ -124,4 +124,26 @@ a {
 		background-color: rgba(255, 255, 255, 0.4);
 		border-radius: 50%;
 	}
+	&--hide {
+		display: none;
+	}
+	&--smoth {
+		opacity: 1;
+	}
 }
+
+/*
+
+
+position: relative;
+		transform: translate(100%, 0 );
+		z-index: -1;
+		transition: transform 0.3s ease 0s;
+		opacity: 0;
+		._watcher-view & {
+			transform: translate(0, 0);
+			z-index: 0;
+			opacity: 1;
+		}
+
+		*/
