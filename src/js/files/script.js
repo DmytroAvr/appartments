@@ -58,9 +58,31 @@ const toTop = {
 	}
  }
  toTop.addEventListener();
-	
+// required required--email	required--tel
 
+const requireds = document.querySelectorAll(".required");
+const requiredEmail = document.querySelector(".required--tel");
+const requiredTel = document.querySelector(".required--email");
 
+if (requireds.length > 0) {
+	requireds.forEach(required => {
+		required.addEventListener('input', inputRequired);
+	});
+
+	function inputRequired(e) {
+		if (e.target.classList.contains("required--tel")) {
+			console.log('tel');
+			delete requiredTel.dataset.required;
+			e.target.dataset.error = "Omyl. Zadajte Valid telefónne";
+		} else if (e.target.classList.contains("required--email"))  {
+			console.log('email');
+			delete requiredEmail.dataset.required;
+			e.target.dataset.error = "Omyl. Zadajte Valid e-mail";
+		}
+	}
+ }
+// data-required="email"
+// data-required="telephone"
 
 // mask for tel number
 // mask for tel number

@@ -77,7 +77,7 @@
 			color: $suptitleColor;
 			border: 1px solid $suptitleColor;
 			&::before {
-				transform: scale(1.2) rotate(90deg);
+				transform: scale(1.2);
 			}
 		}
 	}
@@ -1039,11 +1039,6 @@
 	}
 	// .swiper-slide__slide-body
 	&__slide-body {
-		padding: rem(34) rem(31) rem(38);
-		padding-top: 34;
-		padding-right: 31;
-		padding-bottom: 38;
-		padding-left: 31;
 		@include adaptiveValue("padding-top", 34, 15, 0, $containerWidth, 320);
 		@include adaptiveValue("padding-bottom", 38, 18, 0, $containerWidth, 320);
 		@include adaptiveValue("padding-left", 31, 13, 0, $containerWidth, 320);
@@ -1133,10 +1128,21 @@
 	&::before {
 		transform: rotate(90deg);
 	}
+
+	&:focus {
+		&::before {
+			transform: scale(1.2) rotate(90deg);
+		}
+	}
 }
 .swiper-button-next {
 	&::before {
 		transform: rotate(-90deg);
+	}
+	&:focus {
+		&::before {
+			transform: scale(1.2) rotate(-90deg);
+		}
 	}
 }
 

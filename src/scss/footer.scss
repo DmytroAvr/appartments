@@ -131,7 +131,6 @@
 			svg {
 				filter: drop-shadow(rem(1) rem(1) rem(2) $suptitleColor);
 				fill: $suptitleColor;
-				stroke: rem(2) solid $suptitleColor;
 			}
 		}
 		display: inline-block;
@@ -168,6 +167,5 @@
 		}
 	}
 }
-
 
 //====================================================================================================
